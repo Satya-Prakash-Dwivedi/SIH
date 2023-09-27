@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Waste Recycling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>E-Waste Recycling</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <button class ="button" id="rateCheckerButton" >Rate Checker</button>
+        <button class ="button" id="nearestRecyclerButton">Nearest Recycler</button>
+      </div>
+
+      <div id="map" class="hidden">
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"
+          async
+          defer
+        ></script>
+        <!-- Google Maps will be emedded here -->
+      </div>
+    </main>
+
+    <footer>
+      <div id="chatbot">
+        <!-- Chatbot UI will be embedded here -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
